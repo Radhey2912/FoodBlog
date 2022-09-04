@@ -2,7 +2,7 @@ const express=require('express');
 const fs=require('fs')
 const path=require('path');
 const app =express();
-const port=80;
+const port=process.env.PORT;
 const bodyparser=require('body-parser');
 const mongoose = require('mongoose');
 
