@@ -1,0 +1,106 @@
+@media screen and (max-width:800px){
+    #contectinfo{
+
+        margin: -100px;
+        padding: 10px;
+        
+    
+    }
+}
+*{
+    
+}
+#contectcontainer{
+    display: block;
+    width: 60%;
+    margin: auto;
+    /* border: 2px solid red; */
+    margin-top: 10%;
+    
+
+}
+body{
+    background-color: rgb(248, 239, 228);
+}
+#contectinfo{
+
+    margin: 30px;
+    padding: 50px;
+    
+
+}
+#head{
+    font-size: 3rem;
+    text-align: left;
+    margin: 20px;
+}
+#contectinfo p{
+    font-size: 1.7rem;
+    text-align: left;
+    margin: 20px;
+}
+#myinfo{
+    padding: 20px;
+    font-size: 1.5rem;
+
+}
+#addressmine{
+    padding: 20px;
+    font-size: 1.2rem;
+    
+}
+#handles{
+    
+}
+.conli{
+list-style: none;
+}
+#navcon{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.conli a img{
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+
+    
+}
+#contectdetail {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 60%;
+    height: 5vh;
+    margin: 20px;
+    font-size: 1.3rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+textarea{
+    width: 60%;
+    height: 30vh;
+    margin: 20px;
+    font-size: 1.3rem;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+button{
+    width: 15%;
+    height: 15%;
+    padding: 15px;
+    margin: 20px;
+    font-size: 1.2rem;
+    background-color: rgb(246, 166, 61);
+    border-radius: 10px;
+}
+
+

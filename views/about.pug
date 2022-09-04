@@ -1,0 +1,28 @@
+extends base.pug
+
+block style 
+    style 
+        include ../static/style.css
+        include ../static/styleabout.css      
+
+block content 
+    div.containerabout
+        div#textabout
+            h1 
+                |With the hyper-convenience of modern life, many of us can only operate a microwave. Enjoying a home-cooked meal is not a luxury… it’s in your grasp!
+
+            p 
+                |Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore itaque numquam sed iste maxime saepe ipsam asperiores ullam reprehenderit! Eius iste fuga assumenda obcaecati impedit atque, neque aspernatur, optio, laudantium molestiae autem est quis eum. Voluptates in iure quidem illum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis autem officia necessitatibus vitae harum asperiores, magni voluptatum dicta eum, architecto placeat quidem repellendus excepturi omnis consequatur, porro quam id unde!    
+
+            p 
+                |Lorem ipsum dolor sit amet consectetur adipisicing elit. At odio temporibus a laboriosam, vel earum neque quas. Deleniti itaque minus magni totam, iure laboriosam voluptates veniam dolorem enim a voluptatem nisi ab quisquam! Labore numquam minus aliquam exercitationem nemo, doloremque quia porro eaque beatae suscipit qui, nulla et dolore alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id esse aliquid atque consequatur molestias recusandae debitis voluptates inventore provident officia.
+        div#imgabout
+            img(src="../static/about.jpg", alt="")
+
+block scripts 
+    script(src='../static/index.js')
+
+block foot 
+    footer#foot
+        p 
+            | Copyright © 2022 Radhey'sFoodBlog.com | All rights reserverd

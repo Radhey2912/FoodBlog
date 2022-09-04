@@ -1,0 +1,61 @@
+extends base.pug
+
+block style 
+    style
+        include ../static/stylecontect.css 
+        include ../static/style.css
+        
+
+block content 
+    div#contectcontainer
+        div#contectinfo
+            h1#head 
+                |Get in touch
+
+            p 
+                |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt maxime totam maiores nobis! Quo aut hic nostrum dolores beatae, officia, eum quaerat unde voluptatem est alias tempora repudiandae ipsam quas ad aliquid iste nihil, voluptate cum ex facere mollitia laudantium officiis. Quam, deserunt non consectetur reiciendis tempore temporibus alias magni. Sed, cumque porro sapiente placeat error molestias cum aliquam dolorem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, error assumenda necessitatibus quo eius est aut natus excepturi ipsa ipsam. Magni sapiente eos maiores debitis deserunt, molestiae dolore! Libero, magni?
+            div#myinfo
+                h2 
+                    |mugdalradhey@gmail.com
+                h2 
+                    |+91-8160041705
+            
+            div#addressmine
+                h1 
+                    |123 parul university
+                h1 
+                    |vadodara,Gujrat
+            div#handles
+                ul#navcon 
+                    li.conli
+                        a(href="https://www.instagram.com/" target='_blank')
+                            img(src="../static/instagramlogo.png", alt="" )  
+                    li.conli
+                        a(href="https://twitter.com/?lang=en-in" target='_blank')
+                            img(src="../static/twitlogo.png", alt="" ) 
+                    li.conli
+                        a(href="https://www.youtube.com/" target='_blank')
+                            img(   src="../static/youtube.png", alt="" )
+        hr
+        div.form
+            form(action="/contect" method='POST' id='contectdetail')   
+                
+                input(type="text", name="firstname" placeholder="Enter your first name")
+                
+                input(type="text", name="lastname" placeholder="Enter your last name")
+                
+                input(type="email", name="email" placeholder="Enter your Email")
+                
+                textarea(name="massage", cols="50", rows="5" placeholder="Enter massage") 
+
+                button 
+                    |Submit
+
+
+block scripts 
+    script(src='../static/index.js')
+
+block foot 
+    footer#foot
+        p 
+            | Copyright © 2022 Radhey'sFoodBlog.com | All rights reserverd

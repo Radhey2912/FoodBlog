@@ -1,0 +1,45 @@
+//- layout.pug
+doctype html 
+html
+  head
+    title Radhey's Food Blog
+    block style 
+        style 
+            include ../static/style.css
+  body
+    nav.navbar
+         div.logo.logochange
+             h1 Radhey's Food Blog
+         div.navmenu.navchange
+              ul#nav
+                li
+                  a(href='/blog') Blog
+                li
+                    a(href='/about') About
+                li
+                    a(href='/contect') Contact
+                li 
+                    a(href="https://www.instagram.com/" target='_blank')
+                         img(src="../static/instagramlogo.png", alt="" )  
+                li 
+                    a(href="https://twitter.com/?lang=en-in" target='_blank')
+                        img(src="../static/twitlogo.png", alt="" ) 
+                li 
+                    a(href="https://www.youtube.com/" target='_blank')
+                        img(   src="../static/youtube.png", alt="" )
+         div.hamburger.change
+            span.bar 
+            span.bar 
+            span.bar 
+
+         
+    block content
+    block scripts
+          script(src="../static/index.js") 
+      
+    
+    
+    block foot
+        footer#foot
+            p 
+                | Copyright © 2022 Radhey'sFoodBlog.com | All rights reserverd
